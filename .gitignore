@@ -1,0 +1,8 @@
+# Solo se publica la app, la plantilla y la migración. .trabajo/ (códigos, copias, pruebas) nunca se sube.
+*
+!.gitignore
+!.nojekyll
+!index.html
+!PLANTILLA.md
+!supabase/
+!supabase/012_lavadero.sql

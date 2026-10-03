@@ -74,7 +74,8 @@ button{cursor:pointer}
 
 /* formulario */
 .lbl{display:block;font-size:13px;font-weight:600;color:var(--ink2);margin:14px 0 6px;text-transform:uppercase;letter-spacing:.04em}
-.in{width:100%;border:1.5px solid var(--line);background:#fff;border-radius:9px;padding:11px 12px;min-height:46px;font-size:16px;outline:none;transition:border-color .15s}
+.in{width:100%;border:1.5px solid var(--line);background:#fff;color:var(--ink);border-radius:9px;padding:11px 12px;min-height:46px;font-size:16px;outline:none;transition:border-color .15s}
+.in::placeholder{color:#8C909A}
 .in:focus{border-color:var(--ink)}
 textarea.in{min-height:96px;resize:vertical}
 .in-chapa{font-family:var(--fh);font-size:34px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-align:center;border-width:2px;border-color:var(--ink);padding:6px}
@@ -728,7 +729,7 @@ async function activarDispositivo(){
 function viewPrimerAdmin(){
   return `<div class="login"><div class="login-box">${marcaLogin()}
     <h1 class="h1">Primer administrador</h1>
-    <p class="lead">Es el primer ingreso de este lavadero. Creá la persona que va a administrar: después suma a los empleados desde Administración.</p>
+    <p class="lead">Es el primer ingreso de este lavadero. Creá la persona que va a administrar: después sumá a los empleados desde Administración.</p>
     <form onsubmit="event.preventDefault();crearPrimerAdmin()" autocomplete="off">
       <label class="lbl" for="pa-n" style="color:#BDB8AC">Nombre</label><input id="pa-n" class="in" maxlength="40" required>
       <label class="lbl" for="pa-p" style="color:#BDB8AC">PIN de 4 números</label><input id="pa-p" class="in" inputmode="numeric" maxlength="4" pattern="\\d{4}" required>
